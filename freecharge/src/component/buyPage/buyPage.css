@@ -1,0 +1,26 @@
+.product_info h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.product_image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.product_image img {
+  object-fit: contain;
+  width: 30em;
+  margin-bottom: 2em;
+}
+.paypal_button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.paypal_Confirm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}

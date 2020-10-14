@@ -1,0 +1,13 @@
+.header_main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 3rem;
+}
+.logo_image {
+  position: sticky;
+  top: 0;
+  max-width: 10rem;
+  object-fit: contain;
+  padding: 1em 1em;
+}
