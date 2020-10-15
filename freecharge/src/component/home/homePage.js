@@ -17,26 +17,19 @@ import Select from "@material-ui/core/Select";
 const useStyles = makeStyles((theme) => ({
   root: {
     maxWidth: 345,
+    minWidth: 150,
   },
   media: {
     height: 0,
     paddingTop: "56.25%", // 16:9
   },
   button: {
-    marginLeft: "3em",
+    marginLeft: "1em",
+    marginRight: "1em",
   },
   collections: {
     paddingLeft: "2em",
     paddingTop: "4em",
-  },
-  serchField: {
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  formControl: {
-    margin: theme.spacing(2),
-    minWidth: 110,
   },
 }));
 
@@ -66,35 +59,42 @@ function Home({ history }) {
 
   return (
     <div>
-      <div className={classes.serchField}>
-        <TextField
-          id="outlined-basic"
-          label="Search recipe by name"
-          value={inputBox}
-          onChange={(e) => setInputBox(e.target.value)}
-          variant="outlined"
-        />
-        <FormControl variant="outlined" className={classes.formControl}>
-          <InputLabel id="demo-simple-select-outlined-label">
-            category
-          </InputLabel>
-          <Select
-            labelId="demo-simple-select-outlined-label"
-            id="demo-simple-select-outlined"
-            value={userCategory}
-            onChange={(e) => setUserCategory(e.target.value)}
-            label="category"
-          >
-            <MenuItem value="">
-              <em>All</em>
-            </MenuItem>
-            <MenuItem value="mains">Mains</MenuItem>
-            <MenuItem value="appetizer">Appetizer</MenuItem>
-            <MenuItem value="dessert">Dessert</MenuItem>
-            <MenuItem value="clone">Clone</MenuItem>
-            <MenuItem value="weird">Weird</MenuItem>
-          </Select>
-        </FormControl>
+      <div>
+        <Grid container spacing={2}>
+          <Grid item xs={12} md={6}>
+            <TextField
+              id="outlined-basic"
+              label="Search recipe by name"
+              value={inputBox}
+              fullWidth
+              onChange={(e) => setInputBox(e.target.value)}
+              variant="outlined"
+            />
+          </Grid>
+          <Grid item xs={12} md={6}>
+            <FormControl fullWidth variant="outlined">
+              <InputLabel id="demo-simple-select-outlined-label">
+                category
+              </InputLabel>
+              <Select
+                labelId="demo-simple-select-outlined-label"
+                id="demo-simple-select-outlined"
+                value={userCategory}
+                onChange={(e) => setUserCategory(e.target.value)}
+                label="category"
+              >
+                <MenuItem value="">
+                  <em>All</em>
+                </MenuItem>
+                <MenuItem value="mains">Mains</MenuItem>
+                <MenuItem value="appetizer">Appetizer</MenuItem>
+                <MenuItem value="dessert">Dessert</MenuItem>
+                <MenuItem value="clone">Clone</MenuItem>
+                <MenuItem value="weird">Weird</MenuItem>
+              </Select>
+            </FormControl>
+          </Grid>
+        </Grid>
       </div>
       <Grid container spacing={2} className={classes.collections}>
         {apiData
