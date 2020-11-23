@@ -1,0 +1,15 @@
+.homepageMain {
+  margin: 10px;
+}
+.homepage_pagination {
+  margin: 20px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.homepageSearch {
+  margin: auto;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}

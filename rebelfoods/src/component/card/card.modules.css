@@ -1,0 +1,21 @@
+.cardMain {
+  display: flex;
+  align-items: center;
+  /* justify-content: end; */
+  border-radius: 25px;
+  border: 2px solid #73ad21;
+  padding: 20px;
+  width: 95vw;
+  height: 35vh;
+}
+.cardImage {
+  width: 20vw;
+  object-fit: contain;
+  max-height: 25vh;
+}
+.cardData {
+  margin: 20px;
+}
+span {
+  font-weight: 50;
+}
