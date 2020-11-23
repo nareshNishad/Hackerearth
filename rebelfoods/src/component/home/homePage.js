@@ -66,10 +66,10 @@ function Home() {
       </div>
       <Grid container spacing={2}>
         {apiData
+          .slice((page - 1) * 20, page * 20)
           .filter((beerObject) =>
             beerObject.name.toLowerCase().includes(inputBox)
           )
-          .slice((page - 1) * 20, page * 20)
           .map((beer, index) => (
             <Grid key={beer.id} item xs={12}>
               <Card image={imageData?.[index % 5].image} data={beer} />

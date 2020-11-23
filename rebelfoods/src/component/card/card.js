@@ -8,7 +8,7 @@ function Card(props) {
         className="cardImage"
         src={props.image}
         loading="lazy"
-        alt="image"
+        alt="Beer image"
         width="500"
         height="600"
       ></img>
