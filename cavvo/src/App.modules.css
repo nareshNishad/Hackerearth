@@ -1,0 +1,99 @@
+.App {
+  background-color: #1a1f22;
+  height: 200vh;
+}
+h3 {
+  text-align: center;
+  color: white;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+h4 {
+  text-align: center;
+  color: white;
+  padding-bottom: 20px;
+}
+.App_upper_body {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.App_group_avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.App_group_avatar h5 {
+  padding: 8px;
+  background: white;
+  border-radius: 25px;
+  margin: 10px;
+}
+.App_upper_body_field span {
+  color: white;
+  margin: 40px;
+}
+
+.App_upper_body_field {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: column;
+}
+.App_upper_body_field input {
+  height: 40px;
+  border-radius: 25px;
+}
+
+.App_body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: wrap;
+}
+.App_button {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.App_button button {
+  margin: 20px;
+  padding: 15px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.App_button button:hover {
+  transform: scale(1.2);
+}
+.App_button_update {
+  background: #0074ba;
+}
+.App_button_remove {
+  background-color: #ff5b68;
+}
+.App_sorting button {
+  padding: 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  background: #5798eb;
+  margin: 10px;
+}
+/* Input placeHolder center */
+::-webkit-input-placeholder {
+  text-align: center;
+}
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  text-align: center;
+}
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  text-align: center;
+}
+
+:-ms-input-placeholder {
+  text-align: center;
+}
