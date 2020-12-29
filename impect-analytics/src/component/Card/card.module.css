@@ -1,0 +1,21 @@
+.main_card {
+  position: relative;
+  border-radius: 25px;
+  border: 2px solid #393939;
+  width: 170px;
+  height: 150px;
+  margin: 10px;
+  overflow: hidden;
+}
+
+.card_image {
+  position: relative;
+  width: 170px;
+  height: 120px;
+}
+.card_footer {
+  background: #5798eb;
+  height: 30px;
+  text-align: center;
+  color: black;
+}
