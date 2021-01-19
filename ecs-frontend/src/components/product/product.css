@@ -1,0 +1,49 @@
+.product {
+  height: 95%;
+  margin: 10px;
+  border: 1px solid burlywood;
+  /* flex-wrap: wrap; */
+  white-space: pre-wrap; /* Webkit */
+  white-space: -moz-pre-wrap; /* Firefox */
+  white-space: -pre-wrap; /* Opera <7 */
+  white-space: -o-pre-wrap; /* Opera 7 */
+  word-wrap: break-word; /* IE */
+}
+.product :nth-of-type(odd) {
+  padding: 10px;
+}
+.details div {
+  text-align: justify;
+  padding-left: 0px !important;
+}
+span {
+  text-align: end !important;
+}
+.star_rating {
+  display: flex;
+  align-items: baseline;
+  padding: 0px !important;
+}
+.stars-outer {
+  display: inline-block;
+  position: relative;
+  font-family: "Font Awesome 5 Free";
+}
+
+.stars-outer::before {
+  content: "\f006 \f006 \f006 \f006 \f006";
+}
+
+.stars-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+}
+
+.stars-inner::before {
+  content: "\f005 \f005 \f005 \f005 \f005";
+  color: #f8ce0b;
+}

@@ -1,10 +1,10 @@
 # Coda global frontend
 
-![plot](./images/home.PNG)
+![plot](./images/home.png)
 
 <br/>
 
-![plot](./images/match.PNG)
+![plot](./images/match.png)
 
 ## Available Scripts
 
